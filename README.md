@@ -1,8 +1,8 @@
 # Página Web Aprender a programar
 # Alojado en infinityfree en el siguiente enlace 
-     ```
+
      https://aprenderprogrmacion.kesug.com/
-     ```
+
 
 Este proyecto es una página web diseñada con **HTML, CSS y JavaScript**, optimizada para adaptarse a diferentes dispositivos 
 ---
@@ -72,7 +72,6 @@ Para subir la página a un servidor, sigue estos pasos:
    - Puedes clonar el repositorio con Git:  
      ```bash
      https://github.com/DAVEPOZO/paguina_web/tree/main/paginaWeb
-     https://aprenderprogrmacion.kesug.com/
      ```
    - O descargar el archivo ZIP desde GitHub y descomprimirlo.  
 
