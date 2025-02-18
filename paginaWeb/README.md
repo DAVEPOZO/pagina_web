@@ -66,7 +66,7 @@ Para subir la página a un servidor, sigue estos pasos:
 1️ **Descargar el Código**  
    - Puedes clonar el repositorio con Git:  
      ```bash
-     git clone https://github.com/tu-usuario/nombre-del-proyecto.git
+     https://github.com/DAVEPOZO/paguina_web/tree/main/paginaWeb
      ```
    - O descargar el archivo ZIP desde GitHub y descomprimirlo.  
 
