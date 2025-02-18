@@ -67,6 +67,7 @@ Para subir la página a un servidor, sigue estos pasos:
    - Puedes clonar el repositorio con Git:  
      ```bash
      https://github.com/DAVEPOZO/paguina_web/tree/main/paginaWeb
+     https://aprenderprogrmacion.kesug.com/
      ```
    - O descargar el archivo ZIP desde GitHub y descomprimirlo.  
 
