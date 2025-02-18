@@ -1,0 +1,138 @@
+/* 🔹 Estilos Generales */
+body {
+    font-family: "Verdana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #11569f;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* 🔹 Header */
+header {
+    background: #0f4987;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 🔹 Menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    white-space: nowrap; /* Evita saltos de línea en los enlaces */
+}
+
+nav a:hover {
+    background: #007bff;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+/* 🔥 Responsividad 🔥 */
+
+/* 📌 Pantallas pequeñas (Máx. 600px) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        margin: 2px 0;
+    }
+}
+
+/* 🔹 Contenedor Principal */
+.container {
+    width: 60%;
+    max-width: 800px; /* Evita que sea demasiado ancho en pantallas grandes */
+    margin: 20px auto 7%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 📌 Responsividad para móviles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* 🔹 Contenedor del Quiz */
+#quiz-container {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#question-container {
+    margin-bottom: 35px;
+}
+
+/* 🔹 Botones */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    background: #007bff;
+    font-size: 0.9em;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+/* 🔹 Clases de Utilidad */
+.hide {
+    display: none;
+}
+
+/* 🔹 Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+}

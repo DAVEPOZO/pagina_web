@@ -1,0 +1,167 @@
+/* 🔹 Estilos Generales */
+body {
+    font-family: "Verdana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #11569f;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* 🔹 Header */
+header {
+    background: #0f4987;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 🔹 Menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+    flex-wrap: wrap; /* Permite que los enlaces se ajusten */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    white-space: nowrap; /* Evita que los enlaces se rompan en varias líneas */
+}
+
+nav a:hover {
+    background: #007bff;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+/* 🔹 Contenedor Principal */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word; /* Asegura que el texto no se corte */
+}
+
+/* 🔹 Sección de Textos */
+.textos {
+    width: 96%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; /* Evita que el texto se desborde */
+    max-width: 100%;
+}
+
+/* 🔹 Tipografía */
+h2 {
+    text-align: center;
+    color: #007bff;
+    
+    max-width: 100%;
+     }
+
+ h3 {
+    color: #007bff;
+    
+    max-width: 100%;
+}
+
+/* 🔹 Código y pre-formato */
+pre {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+code {
+    font-family: "Courier New", monospace;
+}
+
+/* 🔹 Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* 🔥 Responsividad 🔥 */
+
+/* 📌 Pantallas pequeñas (Máx. 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        margin: 2px 0;
+    }
+
+    .container, .textos {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    pre {
+        font-size: 0.9em;
+    }
+}
+
+/* 📌 Móviles pequeños (Máx. 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h2, h3 {
+        font-size: 1.3em;
+    }
+
+    pre {
+        font-size: 0.85em;
+    }
+
+    .textos {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programación Estructurada</title>
+        <link rel="stylesheet" href="../assests/estructurada.css">
+    </head>
+    <body>
+        <header>
+            <h1>Programación Estructurada</h1>
+        </header>
+
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="estructurada.html">Programación Estructurada</a>
+            <a href="poo.html">POO</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="quizz.html">Quiz</a>
+        </nav>
+
+        <div class="container">
+            <div class="textos">
+                <h3>DEFINICION</h2>
+                <p >
+                    La programación estructurada se fundamenta en el uso de tres
+                    tipos de instrucciones
+                    para desarrollar un programa informático. Entre sus ventajas
+                    destacan la simplicidad
+                    y rapidez en la creación de software, así como la reducción de
+                    la complejidad en las
+                    pruebas y el proceso de testing, gracias a su enfoque basado en
+                    un número limitado de
+                    estructuras de control.
+                </p>
+            </div>
+
+            <h2>1️⃣ Variables</h3>
+            <div class=" textos">
+                <p>Una variable es donde se almacenan y se recuperan los datos
+                    de un programa. Así de simple.
+                    En programación, la utilizamos para guardar datos y estados,
+                    asignar ciertos valores de
+                    variables a otras, representar valores de expresiones
+                    matemáticas y mostrar valores por pantallas.
+                </p>
+
+                <p>Una variable en programación se caracteriza por:</p>
+
+                <ul>
+                    <li><strong>Nombre único:</strong> Identifica la variable
+                        dentro del programa.</li>
+                    <li><strong>Valor guardado:</strong> Puede cambiar durante
+                        la ejecución del programa.</li>
+                    <li><strong>Tipo de datos:</strong> Puede ser numérico,
+                        texto, booleano, etc.</li>
+                    <li><strong>Alcance:</strong> Puede ser <em>global</em>
+                        (accesible desde cualquier parte del programa) o
+                        <em>local</em> (limitado a un bloque de código).</li>
+                </ul>
+
+                <h3>Tipos de variables en programación</h2>
+
+                <p>Los tipos de variables dependen del lenguaje de programación.
+                    Cada lenguaje tiene sus propias formas de definir variables
+                    y reglas de tipado:</p>
+
+                <ul>
+                    <li><strong>Tipado estático:</strong> El tipo de variable se
+                        establece en la declaración.</li>
+                    <li><strong>Tipado dinámico:</strong> El tipo de variable se
+                        asigna en tiempo de ejecución.</li>
+                </ul>
+
+                <h3>Algunos tipos de datos </h2>
+
+                <ul>
+                    <li><strong>Variables numéricas:</strong> Almacenan números
+                        enteros.</li>
+                    <li><strong>Variables de punto flotante:</strong> Guardan
+                        números con decimales.</li>
+                    <li><strong>Variables de caracteres:</strong> Representan
+                        símbolos o caracteres individuales.</li>
+                    <li><strong>Variables de cadena de caracteres:</strong>
+                        Contienen palabras y textos.</li>
+                    <li><strong>Variables lógicas o booleanas:</strong>
+                        Almacenan valores <em>verdadero</em> o
+                        <em>falso</em>.</li>
+                </ul>
+
+                <h3>Cómo nombramos las variables </h3>
+                <p>
+                    Lo primero que tienes que saber es que las variables se
+                    identifican.
+                    Tienen un identificador, que no es otra cosa que la forma en
+                    que las nombramos.
+                    Y hay que respetar una serie de restricciones o condiciones
+                    previas.
+                    <br>
+                    Aquí van los límites:
+                    <ul>
+                        <li>El nombre de la variable no puede empezar por un
+                            número.</li>
+                        <li>El nombre de la variable no puede contener
+                            espacios.</li>
+                        <li>El nombre de la variable no puede contener
+                            caracteres especiales.</li>
+                        <li>El nombre de la variable no puede ser una palabra
+                            reservada del lenguaje.</li>
+                    </ul>
+                </p>
+                <pre>
+                <code>
+    # Ejemplo en Python
+    nombre = "Juan"
+    edad = 25
+    print(f"Hola, mi nombre es {nombre} y tengo {edad} años.")
+                </code>
+            </pre>
+
+            </div>
+
+            <h2>2️⃣ Condicionales</h3>
+            <div class="textos">
+
+                <p>Las condicionales en programación son estructuras
+                    fundamentales que permiten a un programa tomar decisiones en
+                    función de ciertas condiciones. Actúan como puntos de
+                    control que determinan qué conjunto de instrucciones debe
+                    ejecutarse dependiendo del resultado de una expresión
+                    lógica.</p>
+
+                <p>En otras palabras, una condicional permite que el código siga
+                    diferentes caminos según se cumplan o no ciertas
+                    condiciones, lo que hace que los programas sean más
+                    dinámicos y adaptables a distintos escenarios.</p>
+
+                <h3>Estructura básica de las condicionales</h2>
+
+                <p>En la mayoría de los lenguajes de programación, la estructura
+                    de una condicional sigue un patrón de tipo "si-entonces",
+                    siendo la sentencia <strong>if</strong> una de las más
+                    utilizadas. Por ejemplo, en Python se escribe de la
+                    siguiente manera:</p>
+
+                <pre>
+                    <code>
+    if condicion:
+    # Código a ejecutar si la condición es verdadera
+    else:
+    # Código a ejecutar si la condición es falsa
+                    </code>
+            </pre>
+
+                <p>Aquí, el programa evalúa la condición establecida. Si esta es
+                    verdadera, se ejecuta el bloque de código dentro del
+                    <strong>if</strong>; en caso contrario, se ejecuta el bloque
+                    definido en <strong>else</strong>. Esta estructura permite
+                    modificar el flujo del programa de forma sencilla y
+                    eficiente.</p>
+
+                <h3>Operadores de comparación y condiciones combinadas</h2>
+
+                <p>Las condicionales suelen utilizar operadores de comparación
+                    para evaluar expresiones. Algunos operadores comunes
+                    incluyen:</p>
+
+                <ul>
+                    <li><strong>==</strong> (igualdad)</li>
+                    <li><strong>!=</strong> (diferente)</li>
+                    <li><strong>&gt;</strong> (mayor que)</li>
+                    <li><strong>&lt;</strong> (menor que)</li>
+                    <li><strong>&gt;=</strong> (mayor o igual que)</li>
+                    <li><strong>&lt;=</strong> (menor o igual que)</li>
+                </ul>
+
+                <p>Además, es posible combinar múltiples condiciones usando
+                    operadores lógicos como <strong>and</strong> (y) y
+                    <strong>or</strong> (o), lo que permite generar reglas más
+                    complejas para la toma de decisiones. Veamos un ejemplo:</p>
+
+                <pre>
+<code>
+    # Ejemplo en Python
+    edad = 20
+    if edad >= 18 and edad <= 65:
+        print("Eres un adulto.")
+    elif edad < 18:
+        print("Eres menor de edad.")
+    else:
+        print("Eres un adulto mayor.")
+</code>
+            </pre>
+
+                <p>En este fragmento de código, la variable
+                    <strong>edad</strong> es evaluada en distintas condiciones.
+                    Dependiendo del valor, el programa imprimirá un mensaje
+                    diferente, lo que demuestra la utilidad de las condicionales
+                    en la toma de decisiones dentro de un programa.</p>
+
+                <p>Permiten ejecutar código según una condición.</p>
+                <pre>
+                <code>
+    # Ejemplo en Python
+    if edad >= 18:
+        print("Eres mayor de edad.")
+    else:
+        print("Eres menor de edad.")
+                </code>
+            </pre>
+
+            </div>
+
+            <h2>3️⃣ Bucles</h3>
+            <div class="textos">
+
+                <p>En programación, los ciclos, también conocidos como bucles,
+                    son estructuras que permiten ejecutar repetidamente un
+                    conjunto de instrucciones mientras se cumpla una condición
+                    específica. Esto permite automatizar tareas repetitivas sin
+                    necesidad de escribir el mismo código varias veces.</p>
+
+                <p>El funcionamiento de los ciclos está controlado por variables
+                    o condiciones lógicas, lo que nos permite definir el número
+                    de repeticiones y evitar bucles infinitos que podrían
+                    bloquear el programa.</p>
+
+                <h3>Tipos de Bucles en Programación</h2>
+
+                <p>Los bucles más utilizados en la mayoría de los lenguajes de
+                    programación son:</p>
+
+                <h3>Bucle <code>for</code></h3>
+
+                <p>El bucle <code>for</code> es ampliamente utilizado cuando se
+                    conoce de antemano la cantidad de veces que debe repetirse
+                    una acción. Este ciclo cuenta con cuatro elementos
+                    clave:</p>
+
+                <ul>
+                    <li><strong>Variable de inicio:</strong> se declara e
+                        inicializa antes de comenzar el ciclo.</li>
+                    <li><strong>Condición:</strong> determina hasta cuándo se
+                        ejecutará el bucle.</li>
+                    <li><strong>Modificador:</strong> cambia el valor de la
+                        variable en cada iteración.</li>
+                    <li><strong>Cuerpo del bucle:</strong> contiene las
+                        instrucciones que se repetirán.</li>
+                </ul>
+
+                <p>Ejemplo de un bucle <code>for</code> en C#:</p>
+
+                <pre>
+<code>
+    for (int i = 0; i < 5; i++) 
+    {
+        Console.WriteLine("Iteración número: " + i);
+    }
+</code>
+                </pre>
+
+                <p>En este código:</p>
+
+                <ul>
+                    <li><strong>Variable de inicio:</strong> <code>int i =
+                            0;</code> se declara y asigna el valor inicial.</li>
+                    <li><strong>Condición:</strong> <code>i < 5;</code> el bucle
+                        continuará mientras <code>i</code> sea menor que 5.</li>
+                    <li><strong>Modificador:</strong> <code>i++;</code>
+                        incrementa <code>i</code> en cada iteración.</li>
+                    <li><strong>Cuerpo del bucle:</strong> imprime en pantalla
+                        el número de iteración.</li>
+                </ul>
+
+                <h3>Bucle <code>while</code></h3>
+
+                <p>El bucle <code>while</code> ejecuta repetidamente un bloque
+                    de código mientras se cumpla una condición lógica. Se usa
+                    cuando no se conoce el número exacto de iteraciones desde el
+                    inicio.</p>
+
+                <p>Ejemplo en C#:</p>
+
+                <pre>
+<code>
+    int contador = 0;
+    while (contador < 5) 
+    {
+        Console.WriteLine("El contador es: " + contador);
+        contador++;
+    }
+</code>
+                </pre>
+
+                <p>Aquí, el ciclo continuará ejecutándose mientras la variable
+                    <code>contador</code> sea menor que 5. En cada iteración, su
+                    valor aumenta en 1.</p>
+
+                <h3>Bucle <code>do while</code></h3>
+
+                <p>El bucle <code>do while</code> es similar al
+                    <code>while</code>, pero con la diferencia de que el código
+                    dentro del bucle se ejecutará al menos una vez, incluso si
+                    la condición no se cumple.</p>
+
+                <p>Ejemplo en C#:</p>
+
+                <pre>
+<code>
+    int numero = 0;
+    do 
+    {
+        Console.WriteLine("El valor de numero es: " + numero);
+        numero++;
+    } while (numero < 5);
+</code>
+                </pre>
+
+                <p>En este caso, el código dentro del bloque <code>do</code> se
+                    ejecuta primero y luego se evalúa la condición. Si sigue
+                    siendo verdadera, el bucle se repetirá.</p>
+
+            </div>
+
+            <h2>4️⃣ Funciones</h3>
+            <div class="textos">
+                <p>Las funciones son bloques de código reutilizables que
+                    permiten estructurar mejor un programa, mejorar la
+                    legibilidad y evitar la repetición de código innecesario.
+                    Cada función puede recibir datos de entrada, procesarlos y
+                    devolver un resultado.</p>
+
+                <h3>Características de las Funciones</h2>
+
+                <p>Las funciones en programación tienen varias características
+                    clave:</p>
+
+                <ul>
+                    <li><strong>Modularidad:</strong> Permiten dividir el código
+                        en partes más manejables.</li>
+                    <li><strong>Reutilización:</strong> Se pueden llamar
+                        múltiples veces sin reescribir el código.</li>
+                    <li><strong>Encapsulación:</strong> Mantienen su propia
+                        lógica sin afectar otras partes del programa.</li>
+                    <li><strong>Parámetros:</strong> Pueden recibir valores de
+                        entrada para trabajar con ellos.</li>
+                    <li><strong>Valor de retorno:</strong> Pueden devolver un
+                        resultado que se usará en otra parte del código.</li>
+                </ul>
+
+                <h3>Sintaxis Básica de una Función</h2>
+
+                <p>En C#, una función se define utilizando el siguiente
+                    formato:</p>
+
+                <pre>
+<code>
+    tipoDeRetorno NombreFuncion(parámetros)
+    {
+        // Cuerpo de la función
+        return valor; // (opcional)
+    }
+</code>
+                </pre>
+
+                <p>Ejemplo de una función en C# que suma dos números:</p>
+
+                <pre>
+<code>
+    int Sumar(int a, int b) 
+    {
+        return a + b;
+    }
+</code>
+                </pre>
+
+                <p>En este ejemplo:</p>
+
+                <ul>
+                    <li><strong>Tipo de retorno:</strong> <code>int</code>
+                        indica que la función devuelve un número entero.</li>
+                    <li><strong>Nombre de la función:</strong>
+                        <code>Sumar</code> describe su propósito.</li>
+                    <li><strong>Parámetros:</strong> <code>int a, int b</code>
+                        son los valores que recibe la función.</li>
+                    <li><strong>Valor de retorno:</strong> <code>return a +
+                            b;</code> devuelve la suma de los dos números.</li>
+                </ul>
+
+                <h3>Funciones sin Retorno</h2>
+
+                <p>Algunas funciones no necesitan devolver un valor, solo
+                    ejecutan una acción. Estas se definen con el tipo de retorno
+                    <code>void</code>.</p>
+
+                <pre>
+<code>
+    void Saludar(string nombre) 
+    {
+        Console.WriteLine("Hola, " + nombre + "!");
+    }
+</code>
+                </pre>
+
+                <p>Aquí, la función <code>Saludar</code> imprime un mensaje en
+                    pantalla sin devolver un valor.</p>
+
+                <h3>Funciones con Parámetros Opcionales</h2>
+
+                <p>En C#, se pueden definir parámetros opcionales con valores
+                    por defecto. Si el usuario no proporciona un valor, se usará
+                    el predeterminado.</p>
+
+                <pre>
+<code>
+    void MostrarMensaje(string mensaje = "Mensaje por defecto") 
+    {
+        Console.WriteLine(mensaje);
+    }
+</code>
+                </pre>
+
+                <p>Llamar a <code>MostrarMensaje()</code> sin argumento
+                    imprimirá "Mensaje por defecto".</p>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Aprende Programación. Todos los derechos
+                reservados.</p>
+        </footer>
+    </body>
+</html>

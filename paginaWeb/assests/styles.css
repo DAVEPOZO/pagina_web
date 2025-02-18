@@ -1,0 +1,125 @@
+
+body {
+    font-family: "verdana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #11569f;
+}
+
+header {
+    background: #0f4987;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 🔹 Menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+    flex-wrap: wrap; /* Permite que los enlaces se ajusten */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    white-space: nowrap; /* Evita que los enlaces se rompan en varias líneas */
+}
+
+nav a:hover {
+    background: #007bff;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+/* Cuando la pantalla sea menor a 600px, los enlaces se mostrarán en bloque */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+nav a:hover {
+    background: #007bff;
+    border-radius: 5px;
+}
+
+.container {
+    text-align: justify;
+    max-width: 65%;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ffffffc3;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilos para títulos */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 3px solid #444;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #444;
+    border-left: 5px solid #555;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+/* Estilos para listas */
+ul, ol {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+ul li strong, ol li strong {
+    color: #222;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+}

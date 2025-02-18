@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programación Orientada a Objetos (POO)</title>
+        <link rel="stylesheet" href="../assests/poo.css">
+    </head>
+    <body>
+        <header>
+            <h1>Programación Orientada a Objetos (POO)</h1>
+        </header>
+
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="estructurada.html">Programación Estructurada</a>
+            <a href="poo.html">POO</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="quizz.html">Quiz</a>
+        </nav>
+
+        <div class="container">
+            <div class="textos">
+                <h3>¿Qué es la Programación Orientada a Objetos?</h3>
+
+                <p>La Programación Orientada a Objetos (POO) es un paradigma que
+                    organiza
+                    el código en torno a <strong>clases y objetos</strong>.
+                    Facilita la reutilización y
+                    el mantenimiento del código al estructurar el software en
+                    piezas modulares e independientes.</p>
+            </div>
+
+            <div class="textos">
+
+                <!-- <h2>Conceptos Claves de la POO</h2> -->
+
+                <h3>Clases y Objetos</h3>
+                <p>Uno de los conceptos clave en la POO es la distinción entre
+                    <strong>clase</strong> y <strong>objeto</strong>:</p>
+
+                <ul>
+                    <li><strong>Clase:</strong> Es un modelo o plantilla que
+                        define las características y comportamientos de un
+                        conjunto de objetos.</li>
+                    <li><strong>Objeto:</strong> Es una instancia de una clase
+                        con atributos y métodos específicos.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <img class="ejPOO" src="../assests/img/clases_objetos.png"
+                    alt="Diagrama UML"
+                    class="uml-image">
+                <p>Ejemplo en JAVA</p>
+                <pre>
+<code>
+    class Coche {
+        public string Marca;
+        public string Modelo;
+        public int Año;
+    
+        public void Conducir() {
+            Console.WriteLine(Marca + " " + Modelo + " está siendo conducido.");
+        }
+    }
+    
+    // Crear un objeto Ferrari
+    Coche Ferrari = new Coche();
+    Ferrari.Marca = "Ferrari";
+    Ferrari.Modelo = "488 GTB";
+    Ferrari.Año = 2020;
+    
+    // Llamar al método Conducir
+    Ferrari.Conducir();
+
+</code>
+                </pre>
+            </div>
+
+            <div class="textos">
+                <h3>Principios Fundamentales de la POO</h3>
+                <p>La Programación Orientada a Objetos (POO) se basa en cuatro
+                    principios esenciales que permiten estructurar código de
+                    manera eficiente y reutilizable.</p>
+                <img class="ejPOO" src="../assests/img/poo4principios.png" alt="">
+            </div>
+            <h2>1️⃣ Encapsulación</h2>
+            <div class="textos">
+
+                <p>La encapsulación agrupa datos y métodos dentro de una clase,
+                    restringiendo el acceso directo a ciertos atributos y
+                    permitiendo su manipulación a través de métodos
+                    específicos.</p>
+
+                <p><strong>Ejemplo:</strong> En una cuenta bancaria, el saldo
+                    está protegido y solo puede modificarse mediante métodos
+                    definidos.</p>
+
+                <pre><code>class CuentaBancaria {
+                private double saldo;
+                
+                public CuentaBancaria(double saldoInicial) {
+                    saldo = saldoInicial;
+                }
+                
+                public void depositar(double cantidad) {
+                    saldo += cantidad;
+                }
+                
+                public double consultarSaldo() {
+                    return saldo;
+                }
+            }</code></pre>
+            </div>
+            <h2>2️⃣ Abstracción</h2>
+            <div class="textos">
+
+                <p>La abstracción permite representar un objeto resaltando sus
+                    características esenciales y ocultando detalles internos
+                    innecesarios.</p>
+
+                <p><strong>Ejemplo:</strong> Un sistema de reservas de vuelos
+                    oculta la lógica interna al usuario.</p>
+
+                <pre><code>from abc import ABC, abstractmethod
+            
+            class ReservaVuelo(ABC):
+                @abstractmethod
+                def reservar(self):
+                    pass
+            
+            class ReservaEconomica(ReservaVuelo):
+                def reservar(self):
+                    return "Reserva confirmada en clase económica."
+            
+            reserva = ReservaEconomica()
+            print(reserva.reservar())</code></pre>
+            </div>
+            <h2>3️⃣ Herencia</h2>
+            <div class="textos">
+
+                <p>La herencia permite que una clase derive de otra, heredando
+                    sus atributos y métodos para evitar la repetición de
+                    código.</p>
+
+                <p><strong>Ejemplo:</strong> En un sistema escolar, la clase
+                    <code>Persona</code> es base para <code>Estudiante</code> y
+                    <code>Profesor</code>.</p>
+
+                <pre><code>class Persona {
+    public string Nombre { get; set; }
+}
+
+class Estudiante : Persona {
+    public string Carrera { get; set; }
+}</code></pre>
+
+            </div>
+            <h2>4️⃣ Polimorfismo</h2>
+            <div class="textos">
+
+                <p>El polimorfismo permite que diferentes clases utilicen
+                    métodos con el mismo nombre pero con implementaciones
+                    distintas.</p>
+
+                <p><strong>Ejemplo:</strong> Diferentes figuras pueden compartir
+                    un método <code>dibujar()</code> con distintos
+                    comportamientos.</p>
+
+                <pre><code>class Figura {
+        virtual void dibujar() {
+            cout << "Dibujando figura." << endl;
+        }
+    };
+    
+    class Circulo : public Figura {
+        void dibujar() override {
+            cout << "Dibujando un círculo." << endl;
+        }
+    };</code></pre>
+
+            </div>
+
+            <div class="textos">
+                <h3>Beneficios de POO</h3>
+                <p>La Programación Orientada a Objetos ofrece diversas
+                    ventajas:</p>
+
+                <ul>
+                    <li>Fomenta la reutilización del código mediante clases
+                        reutilizables.</li>
+                    <li>Simplifica la gestión de proyectos grandes mediante la
+                        modularidad.</li>
+                    <li>Reduce la redundancia de código y minimiza errores.</li>
+                    <li>Facilita el trabajo colaborativo al permitir dividir el
+                        código en módulos.</li>
+                    <li>Protege la información sensible a través de
+                        encapsulación.</li>
+                </ul>
+            </div>
+            <div class="textos">
+                <h3>Ejemplo con Diagrama UML</h2>
+                <p>A continuación, un diagrama UML básico que representa la
+                    relación entre clases:</p>
+                <img src="../assests/img/diagrama-de-clases-uml-ejemplo-1.jpg"
+                    alt="Diagrama UML" class="uml-image">
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Aprende Programación. Todos los derechos
+                reservados.</p>
+        </footer>
+    </body>
+</html>
