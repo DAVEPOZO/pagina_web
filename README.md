@@ -1,6 +1,6 @@
 # Página Web Aprender a programar
 # Alojado en infinityfree en el siguiente enlace 
-     ```bash
+     ```
      https://aprenderprogrmacion.kesug.com/
      ```
 
